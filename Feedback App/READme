@@ -1,0 +1,23 @@
+The project is to be focused on collecting feedback from users and displaying statistics based on the feedback received.
+
+The project consists of the following components:
+
+FeedBackForm: This component renders a form where users can provide feedback. It includes a rating select component
+(RatingSelect) and an input field for the feedback text. Users can submit the form by clicking the "Send" button. 
+The component manages the form state using React hooks (useState). It also performs validation on the feedback text 
+and enables/disables the submit button based on the validation result.
+
+FeedBackItem: This component represents an individual feedback item. It displays the rating, feedback text, and a delete button.
+The component is used to render each feedback item in the application. When the delete button is clicked,
+it triggers a callback function (handleDelete) provided by the parent component.
+
+FeedBackStats: This component displays statistics based on the feedback received. It calculates the average
+rating by summing up all the ratings and dividing by the total number of feedback items.
+The average rating is displayed along with the total number of reviews.
+
+RatingSelect: This component renders a list of radio buttons representing rating options from 1 to 10.
+Users can select a rating by clicking on the corresponding radio button. The selected rating is managed using React hooks (useState).
+It also calls a callback function (select) provided by the parent component to update the selected rating.
+
+The project is to be focused on gathering user feedback, storing it in an array, and displaying it along with relevant statistics. 
+The handleAdd and handleDelete functions are likely implemented in the parent component to manage the feedback data and update the UI accordingly.
