@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .w-120 {
+      width: 30rem;
+    }
+    .smooth-transition {
+      transition: all 0.3s ease;
+    }
+    .min-w-40 {
+      min-width: 20rem;
+    }
+  }
+  
