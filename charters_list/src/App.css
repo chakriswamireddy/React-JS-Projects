@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.graytext {
+    @apply text-gray-400 capitalize text-sm font-bold lg:my-3;
+}

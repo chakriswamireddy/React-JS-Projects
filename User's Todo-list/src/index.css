@@ -1,0 +1,102 @@
+/* used bootstrap and normal css styling */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&family=Tilt+Neon&display=swap');
+
+
+body {
+  background-color: rgb(163, 161, 161);
+  font-family: 'PT Serif', serif;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  
+  
+}
+
+.todo-page {
+  max-width: 900px;
+}
+
+#user-heading {
+  font-weight: bold;
+  text-decoration:solid;
+  text-shadow: 1px -1px black;
+}
+
+#todo-header th {
+  text-align: center;
+  height: 70px;
+  
+}
+
+#action-btn {
+  padding-left: 30px;
+  padding-right: 20px;
+
+}
+
+#todo-table {
+  margin: 0px 10px;
+}
+
+.user-enterarea input {
+ margin-left: 580px;
+ color:blue;
+ font-weight: 500;
+ box-shadow: 0px 1px 10px 0px black;
+ border-color: transparent;
+ border-radius: 10px;
+ outline: none;
+ text-indent: 20px;
+
+}
+
+.user-enterarea {
+  display: flex;
+  align-items: center;
+}
+
+
+
+#sort-btn1, #sort-btn2 {
+  margin: 10px;
+}
+
+
+
+
+.userdetails-table {
+  background: gray;
+  /* text-align: center; */
+  position: fixed;
+  right: 20px;
+  top:200px;
+  height: 350px;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px 1px black;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 400px;
+  
+
+
+}
+
+#user-table  {
+  text-align: left;
+  width: 300px;
+  color: white;
+  
+
+}
+
+#title-row {
+  height: 100px;
+}
+
+
