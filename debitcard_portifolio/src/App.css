@@ -23,7 +23,7 @@
 }
 
 
-@media all and (max-width:650px) {
+@media all and (max-width:750px) {
     #menuBar {
 
         background-color: rgb(201, 201, 199);
@@ -109,11 +109,6 @@
         padding-bottom: 50px;
 
 
-    }
-    #white-gap::before {
-        content: '';
-        background: white;
-        flex: 0 0 100px;
     }
     .popup {
         z-index: 99;

@@ -12,7 +12,7 @@ function CardActions() {
   ]
 
   return (
-    <div className='h-32 lg:w-96 md:w-96 sm:w-96 md:w-full w-screen md:ml-5 bg-blue-100 flex md:rounded-xl lg:rounded-xl rounded-tl-3xl rounded-tr-3xl py-5 justify-evenly popup' >
+    <div className='h-32 lg:w-96 md:w-96 sm:w-96 md:w-full w-screen md:ml-5 lg:ml-0 bg-blue-100 flex md:rounded-xl lg:rounded-xl rounded-tl-3xl rounded-tr-3xl py-5 justify-evenly popup' >
 
       {actions.map((item,index) => (
        
