@@ -1,0 +1,25 @@
+/* used this pseudo classes only to create sustom underline effect  */
+
+h1::before {
+  content: '';
+  position: absolute;
+  background:#1575a7;
+  width: 10rem;
+  height: 0.1rem;
+  transform: translate(-10px,60px);
+
+}
+
+
+h1::after {
+  content: '';
+  position: absolute;
+  background: #1575a7;
+  width: 1rem;
+  height: 0.5rem;
+ 
+  transform: translate(-60px,57px);
+}
+
+
+
