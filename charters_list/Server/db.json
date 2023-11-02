@@ -1,3 +1,4 @@
+[
     {
       "id": 1,
       "name": "Michael Jackson",
@@ -17,15 +18,8 @@
         "partnerSince": 2011,
         "averageResponseTime": "30 minutes",
         "description": "Professional Chartered Accountant offering diverse accounting and financial services.",
-        "services": [
-          "Financial accounting",
-          "Bookkeeping",
-          "Balance Sheets"
-        ],
-        "benefits": [
-          "One-time delivery",
-          "24/7 support"
-        ]
+        "services": ["Financial accounting", "Bookkeeping", "Balance Sheets"],
+        "benefits": ["One-time delivery", "24/7 support"]
       }
     },
     {
@@ -47,15 +41,8 @@
         "partnerSince": 2013,
         "averageResponseTime": "45 minutes",
         "description": "Committed to delivering top-notch accounting services to businesses and individuals.",
-        "services": [
-          "Taxation",
-          "Corporate Finance",
-          "Auditing"
-        ],
-        "benefits": [
-          "Error-free documentation",
-          "Expert consultations"
-        ]
+        "services": ["Taxation", "Corporate Finance", "Auditing"],
+        "benefits": ["Error-free documentation", "Expert consultations"]
       }
     },
     {
@@ -107,15 +94,8 @@
         "partnerSince": 2018,
         "averageResponseTime": "20 minutes",
         "description": "Focuses on financial compliance and advisory services for startups.",
-        "services": [
-          "Financial compliance",
-          "Advisory services",
-          "Tax planning"
-        ],
-        "benefits": [
-          "Startup-friendly",
-          "Tailored financial strategies"
-        ]
+        "services": ["Financial compliance", "Advisory services", "Tax planning"],
+        "benefits": ["Startup-friendly", "Tailored financial strategies"]
       }
     },
     {
@@ -142,10 +122,7 @@
           "Business strategy",
           "Risk assessment"
         ],
-        "benefits": [
-          "Business transformation",
-          "Operational efficiency"
-        ]
+        "benefits": ["Business transformation", "Operational efficiency"]
       }
     },
     {
@@ -167,15 +144,8 @@
         "partnerSince": 2016,
         "averageResponseTime": "28 minutes",
         "description": "Dedicated to offering top-tier financial consulting for small to medium enterprises.",
-        "services": [
-          "Financial consulting",
-          "SME advisory",
-          "Growth strategies"
-        ],
-        "benefits": [
-          "Transparent communication",
-          "Integrity-driven solutions"
-        ]
+        "services": ["Financial consulting", "SME advisory", "Growth strategies"],
+        "benefits": ["Transparent communication", "Integrity-driven solutions"]
       }
     },
     {
@@ -202,10 +172,7 @@
           "International finance",
           "Regulatory compliance"
         ],
-        "benefits": [
-          "Global finance solutions",
-          "Tax efficiency"
-        ]
+        "benefits": ["Global finance solutions", "Tax efficiency"]
       }
     },
     {
@@ -232,10 +199,7 @@
           "Fraud examination",
           "Risk management"
         ],
-        "benefits": [
-          "Financial protection",
-          "Fraud prevention"
-        ]
+        "benefits": ["Financial protection", "Fraud prevention"]
       }
     },
     {
@@ -262,10 +226,7 @@
           "Sustainability planning",
           "Grants management"
         ],
-        "benefits": [
-          "Enhanced sustainability",
-          "Optimized financial health"
-        ]
+        "benefits": ["Enhanced sustainability", "Optimized financial health"]
       }
     },
     {
@@ -292,9 +253,7 @@
           "Corporate restructuring",
           "Financial strategy"
         ],
-        "benefits": [
-          "Strategic financial guidance",
-          "Efficient restructuring"
-        ]
+        "benefits": ["Strategic financial guidance", "Efficient restructuring"]
       }
     }
+  ]
