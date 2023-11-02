@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 
 
 function ResultsPage({displayValue}) {
-  const api = "http://localhost:3000/accountants"
+  const api = "https://nodejs3server.onrender.com/"
   const [apiData,setApiData] = useState([])
 
   useEffect(() => {
-    fetch(api)
+    fetch(api,{
+      mode: 'no-cors',
+    })
       .then((response)=> response.json())
       .then((data)=> {
         setApiData(data);
