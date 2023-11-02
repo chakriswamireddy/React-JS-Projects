@@ -66,7 +66,7 @@ function ResultsPage({displayValue}) {
               </div>
 
               <div className=' lg:w-2/5 sm:w-full mx-2'>
-                <img className='h-2/4 w-full rounded-2xl' src={filtered.image} alt="Img not found" />
+                <img className='h-2/4 w-full rounded-2xl' src={filtered.image} alt="" />
                 <p className='font-bold text-3xl py-3'>About {filtered.name} </p>
                 <div className='flex justify-between'>
                   <div className='py-2'>
