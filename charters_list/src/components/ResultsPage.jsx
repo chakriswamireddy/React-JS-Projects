@@ -2,16 +2,25 @@ import React, { useEffect, useState } from 'react'
 
 
 function ResultsPage({displayValue}) {
-  const api = "https://nodejs3server.onrender.com/"
+  const api = "https://nodejs5server.onrender.com/"
   const [apiData,setApiData] = useState([])
 
   useEffect(() => {
     fetch(api,{
-      mode: 'no-cors',
-    })
-      .then((response)=> response.json())
+      // mode: 'no-cors',
+      headers: {
+           "Content-Type": "application/json"
+      },})
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+    
       .then((data)=> {
         setApiData(data);
+        console.log(apiData)
       } )
       .catch((error)=> console.log(error))
   
@@ -24,7 +33,7 @@ function ResultsPage({displayValue}) {
           {displayValue && apiData.filter(item => item.name.toLowerCase().includes(displayValue.toLowerCase())).map(filtered => (
 
 
-          <div id="main-box" className='flex lg:flex-row xl:flex-row lg:w-full h-full  place-content-center gap-7 flex-col'>
+          <div key={filtered.id} id="main-box" className='flex lg:flex-row xl:flex-row lg:w-full h-full  place-content-center gap-7 flex-col'>
               <div className='lg:w-1/4 h-full sm:w-full px-4' >
                 <div  className='font-bold text-3xl py-2'>{filtered.name}</div>
                 <p>I am here to provide my {filtered.intro.replace('.','')}, all to assist you effectively</p>
