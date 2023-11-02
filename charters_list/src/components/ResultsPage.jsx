@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 
 function ResultsPage({displayValue}) {
-  const api = "https://nodejs5server.onrender.com/"
+  const api = "https://nodejs4server.onrender.com/"
   const [apiData,setApiData] = useState([])
 
   useEffect(() => {
@@ -66,7 +66,7 @@ function ResultsPage({displayValue}) {
               </div>
 
               <div className=' lg:w-2/5 sm:w-full mx-2'>
-                <img className='h-2/4 w-full rounded-2xl' src={filtered.image} alt="" />
+                <img className='h-2/4 w-full rounded-2xl' src={filtered.image} alt="Img not found" />
                 <p className='font-bold text-3xl py-3'>About {filtered.name} </p>
                 <div className='flex justify-between'>
                   <div className='py-2'>
