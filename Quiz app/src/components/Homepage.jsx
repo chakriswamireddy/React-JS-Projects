@@ -150,8 +150,9 @@ function Homepage() {
             )}
 
 
-            {apiData&&
+            {apiData?
             <button onClick={NextQuestionClick} className='next-btn' >{buttonText}</button>
+            : <p>Fetching API....</p>
             }
             { 0<=currentQno && currentQno<quizCountArray.length  && 
                 (<progress max={ quizCountArray.length} min={0} value={currentQno+1}  className='progress-bar' ></progress>
