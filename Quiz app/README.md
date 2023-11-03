@@ -1,6 +1,6 @@
 
 # Live Website
-[Vercel Link]https://react-js-projects-6cd2-dt4rpoxs0-chakriswamireddys-projects.vercel.app/
+[Vercel Link](https://react-js-projects-6cd2-dt4rpoxs0-chakriswamireddys-projects.vercel.app/)
 
 
 ## Getting Started with Create React App
@@ -27,10 +27,10 @@ Your app is ready to be deployed!
 i have developed the real-time quiz app. for frotend development I leveraged React JS framework and for backend development, crafted a node js server and I chose to host server on render.com. then embedded the API server to my project.
 
 #### Features
-Randomization of order of questions each time
-10 sec timer for each question to choose
-Progress bar to keep track of questions
-Score with personalised message
+* Randomization of order of questions each time
+* 10 sec timer for each question to choose
+* Progress bar to keep track of questions
+* Score with personalised message
 
 
 
