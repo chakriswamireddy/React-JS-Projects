@@ -4,22 +4,22 @@ function DomainsList({setSearchedDomain}) {
 
 
 
-    
-    
-    
+    // useEffect(()=>{
+    //     const apiUrl = "https://server9user.onrender.com/api/users";
+    //     const domainList = new Set();
         
-    
-    
-    
+    //     fetch(apiUrl)
+    //     .then(response => response.json())
+    //     .then(data => {
             
-    
-    
-    
-    
-    
+    //         data.users.forEach(obj => {
+    //             domainList.add(obj.domain)
+    //             console.log(obj.domain)
+    //         })
+    //     })
         
         
-    
+    // },[])
   return (
     <div>
       <select name="" id="" onChange={(e)=> setSearchedDomain(e.target.value) }>
@@ -32,7 +32,9 @@ function DomainsList({setSearchedDomain}) {
         <option value="UI Designing">UI Designing</option>
         <option value="Management">Management</option>
         <option value="Business Development">Business Development</option>
-        {}
+        {/* <option value=""></option>
+        <option value=""></option>
+        <option value=""></option> */}
 
       </select>
     </div>

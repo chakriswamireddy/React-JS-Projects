@@ -1,52 +1,96 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Teams from './Teams';
+import Users from './Users';
 
 
-function PagesSection({ users }) {
+
+function PagesSection({ users ,selectTeamClick,setTeamMembers,teamMembers, showTeams,setShowTeams }) {
+
+
+  const usersLength = users.length
+
+  const falseArray = Array.from({  length: usersLength }, () => false);
+
+  const [checkboxList,setCheckboxList] =  useState(falseArray)
+
+
+
+  const [emptyTeamError,setEmptyTeamError] = useState(false)
+
+  const TeamMemberCheck=(item,index) => {
+    setEmptyTeamError(false)
+    const tempList = [...checkboxList]
+
+    tempList[index] =  !tempList[index]
+
+    setCheckboxList(tempList)
+
+    if (tempList[index] === true) {
+      setTeamMembers([...teamMembers, users[index]]);
+      console.log(teamMembers);
+    } else {
+      setTeamMembers(teamMembers.filter((member) => member !== item));
+    }
+  }
+
+  const postData = async () => {
+   
+
+      if (teamMembers.length == 0) {
+        
+        setEmptyTeamError(true)
+        console.error('Error: teamMembers is empty');
+        
+        return;
+      }
+      setEmptyTeamError(false)
+
+    try {
+      
+      const response = await fetch('https://server9user.onrender.com/api/team/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(teamMembers),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      setTeamMembers([])
+      setCheckboxList(falseArray)
+    
+    } catch (error) {
+      
+    }
+  };
+
+
+
   return (
     <div className='page-section'>
-      { users && users.length > 0 && users.map((item) => (
 
+      
+      
+     
+      <button onClick={()=>setShowTeams(!showTeams) }> {showTeams?'Go Back to Users':"Show Teams"} </button>
+      
+      {showTeams ? 
+        <Teams />
+        :
+        <>
+        <button onClick={postData}>CreateTeam</button>
+        {emptyTeamError && (
 
+        <span id='error-msg'> please select users to create team  </span>
+         )}
+        <Users users={users} selectTeamClick={selectTeamClick} TeamMemberCheck={TeamMemberCheck} />
+        </>
+      }
+     
 
-        <div className='user-item' key={item.id}>
-          <div>
-            <img src={item.avatar} alt="" />
-            <i className={` fa fa-${item.gender === "Male" ? 'mars' : 'venus'} `} aria-hidden="true"></i>
-          </div>
-
-          <div>
-            <span> {item.first_name} </span>
-            <span> {item.last_name} </span>
-
-          </div>
-          <div>
-
-            <span> {item.domain} </span>
-          </div>
-
-
-
-          {item.available ? (
-            <div id='green-light'>
-              <span ></span>
-              <span> Available </span>
-
-            </div>
-
-          ) : (
-            <div id='red-light'>
-              <span ></span>
-              <span> Not Available </span>
-
-            </div>
-          )}
-
-          <div>  <button id='email-btn' > {item.email} </button> </div>
-
-        </div>
-
-
-      ))}
     </div>
   )
 }

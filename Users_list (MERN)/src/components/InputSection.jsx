@@ -5,7 +5,13 @@ import DomainsList from './DomainsList'
 
 function InputSection({setSearchedName,setSearchedGender, setSearchedAvailable, setSearchedDomain}) {
 
+    // const resetSearching =() => {
 
+    //     setSearchedName('')
+    //     setSearchedAvailable('')
+    //     setSearchedGender('')
+    //     setSearchedDomain('')
+    // }
 
 
     return (
@@ -42,7 +48,7 @@ function InputSection({setSearchedName,setSearchedGender, setSearchedAvailable, 
 
             <DomainsList setSearchedDomain={setSearchedDomain}  />
 
-
+            {/* <button onClick={resetSearching} > Reset Searching </button> */}
         </div>
         </div>
 
