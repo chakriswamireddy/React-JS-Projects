@@ -1,0 +1,159 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+
+}
+
+.homepage > h2 {
+  border-top: 5px olive  solid;
+  border-bottom: 5px olive  solid;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.homepage > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#main-img {
+  height: 100%;
+  width: 70%;
+  min-width: 350px;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+#input-area {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+#input-area input {
+  opacity: 0;
+  z-index: 9;
+}
+
+#input-area > button {
+  position: absolute;
+  margin: 0 auto;
+  left: 22%;
+  z-index: 0;
+}
+
+#editor-tools img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(94, 94, 9);
+  padding: 10px;
+  cursor: pointer;
+}
+
+#editor-tools > p {
+  border: 2px solid rgb(94, 94, 9);
+  padding: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#editor-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+.green-btn {
+  background: rgb(90, 131, 29);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 700;
+
+
+}
+
+#popup-box {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* left: 23%; */
+  margin:0  auto;
+  align-items: center;
+  width: 50%;
+  border: 1px solid blueviolet;
+  min-width: 300px;
+  align-self: center;
+  padding:  10px;
+
+
+  /* background: #7a7878; */
+  
+  /* position: relative; */
+  background: linear-gradient(rgba(114, 110, 110, 0.3), rgba(146, 145, 145, 0.3));
+  backdrop-filter: blur(10px);
+
+}
+
+
+
+#popup-box > span {
+  align-self: flex-end;
+  cursor:default;
+}
+
+#popup-box > span:hover {
+  transform: scale(105%);
+  color: #f97d58;
+}
+
+#popup-box .drop-shadow > img  {
+
+  width: 60%;
+  min-width: 300px;
+  height: auto;
+
+
+}
+
+/* editing images */
+
+.heart {
+  mask-border: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+}
+
+.circle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.square {
+  -webkit-clip-path: inset(8% 4% 11% 7%);
+  clip-path: inset(8% 4% 11% 7%);
+
+}
+
+.rectangle {
+
+  -webkit-clip-path: inset(11% 0 9% 0);
+  clip-path: inset(11% 0 9% 0);
+
+
+}
+
+.drop-shadow {
+  filter: drop-shadow(10px 10px 40px #2e2e2f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
