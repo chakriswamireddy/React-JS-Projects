@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .white-logo {
+        filter: brightness(0) invert(1);
+        -webkit-filter: brightness(0) invert(1);
+       
+        height: 10%;
+    }
+    .gradient-text {
+        background: linear-gradient(to bottom,rgb(128, 140, 207) ,white );
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+      }
+      
+}
+
+.blue-box {
+    @apply flex gap-4 items-center h-20 bg-blue-100 px-6 popup ;
+}
+
+
+@media all and (max-width:750px) {
+    #menuBar {
+
+        background-color: rgb(201, 201, 199);
+        margin: 0;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+        height: 50px;
+        position:fixed;
+        width: 100vw;
+        left:0;
+        bottom: 0;
+        padding: 20px 0;
+        color: slategrey;
+        
+    }
+    #menuBar  * {
+        margin: 0;
+    }
+    #menuBar > li {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #menuBar > li > span:last-child {
+        font-size: smaller;
+  
+    }
+
+    #aspireLogo {
+        transform: scale(7%) translate(600%,-600%);
+        float: left;
+        margin: 0;
+        padding: 0;
+    
+
+    }
+
+
+    #aspireLogo + p{
+        display: none;
+    }
+    
+    /* adjusting scrolling */
+    #menuBar-area {
+        width:100vw;
+        height: 70%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -99;
+      
+    }
+    #debitcard {
+        z-index: 0;
+    }
+    #mainBody {
+        margin-top: 150%;
+    }
+    #balanceArea {
+        position: fixed;
+        top: 0;
+        margin-top: 10px;
+        color: white;
+        width: 80%;
+    }
+
+    #mainBody > div:nth-child(2) {
+        position: fixed;
+        top: 100px;
+        z-index: -1;
+    }
+    #mainBody > div:nth-child(3) > div:first-child > div:first-child {
+        position: fixed;
+        top: 130px;
+
+
+    }
+    #transxBox {
+        min-height: 55vh;
+        padding-bottom: 50px;
+
+
+    }
+    .popup {
+        z-index: 99;
+    }
+
+
+
+
+}
+
+
+
+/* transitions from view click */
+
+#rotateIcon {
+    transform: rotate(-0.25turn);
+    transition: all 0.3s ease-in;
+}
+#norotateIcon {
+
+    transform: rotate(0.25turn);
+    transition: all 0.3s ease-in;
+}
+
+.viewTxs {
+    animation: godown 1s 1;
+
+
+}
+
+.hideTxs {
+    animation: godown 1s 1 reverse;
+    display: none;
+
+}
+
+@keyframes godown {
+    0% {
+        opacity: 0;
+        
+        
+    }
+    30% {
+        opacity: 0.5;
+    }
+    60% {
+       opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        
+        
+    }
+}
+

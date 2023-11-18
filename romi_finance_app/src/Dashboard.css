@@ -1,0 +1,118 @@
+
+@media all and (max-width:650px) {
+    .small-table {
+        display:flex;
+        /* flex-direction: column; */
+        flex-direction: column;
+    }
+    .big-table {
+        display: none;
+    }
+
+    .piechart span {
+        font-size: 10px;
+    }
+
+    
+}
+
+@media all and (min-width:650px) and  (max-width:800px) {
+    .small-table {
+        display:grid;
+        grid-template-columns:repeat(2, minmax(0, 50%));
+        gap:9px;
+    }
+    .big-table {
+        display: none;
+    }
+    
+}
+
+@media all and (min-width:800px) {
+    .big-table {
+        display: table;
+        
+    }
+    .small-table {
+        display: none;
+    }
+    
+}
+
+
+.dashboard {
+    margin: 10%;
+}
+
+.stats-tables {
+    width: 50%;
+    min-width: 400px;
+}
+
+
+.dashboard td, .dashboard th {
+
+    padding-left: 20px;
+
+}
+
+.dashboard > div td:last-child, .dashed-underline {
+    text-align: right;
+
+    padding-right: 20px;
+    text-decoration: underline dashed;
+}
+
+.big-table  td, .big-table th {
+
+    width: 20%;
+}
+
+.piechart {
+    transform: translateX(-40px);
+}
+
+.piechart:hover {
+    filter: drop-shadow(0px 0px 11px #4d81eb);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+.icon-xs {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-xxs {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.gray-text {
+    color: gray;
+}
+
+select option {
+    background: rgb(46, 46, 46) ;
+    color:white
+}
+
+table,.token-tables {
+    background: rgb(25, 25, 25);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.piechart-text {
+    position: absolute;
+    top: 52%;
+    left: 44%;
+    font-size:small;
+    font-weight: bold;
+}
+
