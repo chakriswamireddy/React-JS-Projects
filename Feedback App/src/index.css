@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background: rgb(72, 20, 121);
     margin: 0;
@@ -157,3 +158,164 @@ h2 {
     
 }
 
+=======
+body {
+    background: rgb(72, 20, 121);
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: rgba(27, 26, 26, 0.986);
+    color:rgb(248, 80, 136);
+    margin: 0;
+    padding: 0.01% 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.feedback-items {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px 30px;
+    /* width: 60%; */
+    background: white;
+    border-radius: 15px;
+    position: relative;
+    width: 300px;
+    /* flex-basis: 400px; */
+}
+
+.card.reverse {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.num-display {
+    position: absolute;
+    background: rgb(240, 72, 128);
+    padding:  5px 9px;
+    border-radius: 15px;
+    top: -10px;
+    left: -8px;
+    color: white; 
+}
+
+.close-icon {
+    position: absolute;
+    top:5;
+    right: 0;
+    
+}
+
+.feedback-stats {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute; */
+    width: 300px;
+    height: 30px;
+    
+    color:aqua;
+    
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.input-group input {
+    height: 30px;
+    outline: none;
+    border: 1px solid rgb(99, 96, 96);
+}
+
+.btn-primary {
+    background-color: palevioletred;
+    padding: 9px  15px;
+    margin-left: 5px;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+.btn-secondary {
+    background-color: violet;
+    padding: 9px  15px;
+    margin-left: 5px;
+    border: 0px solid black;
+    border-radius: 10px;
+    
+}
+
+.validation-msg {
+    color:red;
+    font-size: small;
+    margin-top:20px;
+    
+}
+
+.ratings-list {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style-type: none;
+}
+
+.ratings-list li input {
+    background-color: red;
+    color: blue;
+    transform: scale(230%);
+    margin: 15px;
+    position: relative;
+    z-index: 999;
+    opacity: 0;
+    
+    
+}
+
+.ratings-list li input:checked  + label::before{
+    position: absolute;
+    background-color: palevioletred;
+    height: 35px;
+    width: 35px;
+    content: '';
+    transform: translate(-35%,-20%);
+    z-index: -1;
+    border-radius: 50%;
+
+}
+
+.ratings-list li input:checked + label {
+    position: absolute;
+    
+    color:white;
+}
+
+.ratings-list li input + label {
+    position: absolute;
+    transform: translate(-110%,35%);
+    height: 35px;
+    width:35px;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 0;
+    
+    background-color:transparent;
+    
+    
+}
+
+>>>>>>> 2fe6d129981b1950b4f1ed8ab95613ed0466252c
