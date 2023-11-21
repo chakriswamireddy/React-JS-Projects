@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ImageEdit from './ImageEdit';
+import domtoimage from 'dom-to-image';  
 
 function Homepage() {
 
@@ -37,6 +38,20 @@ function Homepage() {
     document.body.removeChild(link);
     }
 
+    const handleDownload = () => {
+        const elementToCapture = document.getElementById('main-img'); // Replace 'styledImage' with the ID of your styled image
+    
+        domtoimage.toBlob(elementToCapture)
+          .then((blob) => {
+            const link = document.createElement('a');
+            link.download = 'styled-image.png'; // Change the filename and format if needed
+            link.href = window.URL.createObjectURL(blob);
+            link.click();
+          });
+      };
+
+
+
     return (
         <div className='homepage'>
             <h2>Add Image/Icon </h2>
@@ -56,6 +71,7 @@ function Homepage() {
                 {imgSrc &&  !openPopup && (
                     <div className='drop-shadow'>
                         <img src={imgSrc} alt="" className={imgClass} id='main-img' />
+                        <button className='green-btn' onClick={handleDownload}>Download Image</button>
                     </div>
                     
                     
