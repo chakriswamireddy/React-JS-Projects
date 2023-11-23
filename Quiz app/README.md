@@ -1,6 +1,6 @@
 
 # Live Website
-[Vercel Link](https://react-js-projects-6cd2-dt4rpoxs0-chakriswamireddys-projects.vercel.app/)
+[Vercel Link](https://quiz-app-two-iota.vercel.app/)
 
 
 ## Getting Started with Create React App
