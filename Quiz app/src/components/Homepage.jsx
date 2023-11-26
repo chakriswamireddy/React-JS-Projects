@@ -98,6 +98,7 @@ function Homepage() {
             setButtonText('Restart')
             setCurrentQNo(-1)
             setYourScore(-1)
+            setQuestionTime(0)
             
         }
         // else if(currentQno == quizCountArray.length -1) {
@@ -110,6 +111,7 @@ function Homepage() {
             console.log(quizCountArray.length)
             setCurrentQNo(currentQno + 1)
             setButtonText("Next")
+            setQuestionTime(0)
             console.log(currentQno)
             
 
